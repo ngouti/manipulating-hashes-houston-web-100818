@@ -16,11 +16,10 @@ def first_challenge
   #your code here
 array2 = []
   contacts.each do |key, value|
-    value.each do |holiday, supply|
-      supply.each do |i|
+    value.each do |i|
 
-        if i == "BBQ"
-          array2.push(holiday_and_supplies.key(supply))
+        if i == "strawberry"
+          array2.push(value.key)
         end
       end
     end
