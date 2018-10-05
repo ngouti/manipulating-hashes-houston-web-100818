@@ -14,17 +14,13 @@ def first_challenge
   }
 
   #your code here
-array2 = []
-  contacts.each do |key, value|
-    value.each do |i|
-
-        if i == "strawberry"
-          array2.push(value.key)
-        end
-      end
+contacts["Freddy Mercury"].each do |attribute, value|
+      if attribute == :favorite_icecream_flavors
+        value.delete_if do|flavor|
+          "strawberry" == flavor
+      
     end
   end
-  return array2
 end
 
   #remember to return your newly altered contacts hash!
