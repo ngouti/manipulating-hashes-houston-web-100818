@@ -14,7 +14,19 @@ def first_challenge
   }
 
   #your code here
+array2 = []
+  first_challenge.each do |season, holiday_and_supplies|
+    holiday_and_supplies.each do |holiday, supply|
+      supply.each do |i|
 
+        if i == "BBQ"
+          array2.push(holiday_and_supplies.key(supply))
+        end
+      end
+    end
+  end
+  return array2
+end
 
   #remember to return your newly altered contacts hash!
   contacts
