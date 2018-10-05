@@ -15,8 +15,8 @@ def first_challenge
 
   #your code here
 array2 = []
-  first_challenge.each do |season, holiday_and_supplies|
-    holiday_and_supplies.each do |holiday, supply|
+  contacts.each do |key, value|
+    value.each do |holiday, supply|
       supply.each do |i|
 
         if i == "BBQ"
